@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+:root {
+    --var-bc-main: #EAEDED;
+    --var-bc-hover: #c8cccc;
+    --var-bc-focus: #afafaf;
+
+    --var-ff-body: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+body {font-family: var(--var-ff-body);}
+body {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.operatore, .numero {cursor: pointer;}
+#text {width: 100%; padding: 1em; text-align: right;}
+#text {
+   font-size: 1.2rem;
+   outline: none;
+   border: none;    
+}
+
+main {
+    width: 300px;
+    height: 420px;
+    background-color: var(--var-bc-main);
+    box-shadow: 
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+    display: flex;
+    height: 17.2%;
+}
+
+
+#zero {width: 70%;}
+.numero, .operatore, .vuoto {
+    height: 100%;
+    width: 30%;
+    border: none;
+    font-size: 1rem;
+    background-color: none;
+}
+
+.numero:hover, .operatore:hover {
+    background-color: var(--var-bc-hover);
+}
+
+.numero:focus, .operatore:focus {
+    background-color: var(--var-bc-focus);
+}
+
+
+
+
+
