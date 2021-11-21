@@ -16,11 +16,13 @@
 html {scroll-behavior: smooth;}
 body {font-family: var(--var-ff-body);}
 body {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background: rgb(235,204,0);
+    background: linear-gradient(229deg, rgba(235,204,0,1) 14%, rgba(94,106,162,1) 38%, rgba(94,106,162,1) 57%, rgba(58,224,110,1) 83%);
+    background-repeat: no-repeat;
 }
 
 .operatore, .numero {cursor: pointer;}
@@ -46,14 +48,16 @@ main {
 }
 
 
-#zero {width: 70%;}
+#zero {width: 88%;}
 .numero, .operatore, .vuoto {
     height: 100%;
     width: 30%;
     border: none;
-    font-size: 1rem;
+    font-size: .8rem;
     background-color: none;
 }
+
+.operatore {font-size: 1.2rem;}
 
 .numero:hover, .operatore:hover {
     background-color: var(--var-bc-hover);

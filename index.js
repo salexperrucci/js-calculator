@@ -2,6 +2,7 @@ const reset = document.getElementById("C");
 const del = document.getElementById("DEL");
 const input = document.getElementById("text");
 const numbers = document.getElementsByClassName("numero");
+const rest = document.getElementById("%");
 
 for(let i = 0; i < numbers.length; i++) numbers[i].addEventListener("click", () => input.value === "0" ? input.value = numbers[i].innerHTML : input.value += numbers[i].innerHTML);
 
